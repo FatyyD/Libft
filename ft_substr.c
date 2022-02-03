@@ -2,28 +2,28 @@
 
 char    *ft_substr(char const *s, unsigned int start, size_t len)
 {
-    char            *substr;
+    char            *str;
     unsigned int    i;
 
     if (!s)
         return (NULL);
     if (start > ft_strlen(s))
     {
-        substr = malloc (sizeof(char) * 1);
-        if (!substr)
+        str = malloc (sizeof(char) * 1);
+        if (!str)
             return (NULL);
-        substr[0] = '\0';
-        return (substr);
+        str[0] = '\0';
+        return (str);
     }
     if (len > ft_strlen(&s[start]))
-        substr = malloc(sizeof(char) * ft_strlen(&s[start]) + 1);
+        str = malloc(sizeof(char) * ft_strlen(&s[start]) + 1);
     else
-        substr = malloc(sizeof(char) * (len + 1));
-    if (!substr)
+        str = malloc(sizeof(char) * (len + 1));
+    if (!str)
         return (NULL);
     i = 0;
     while (s[start] != '\0' && len-- != 0)
-        substr[i++] = s[start++];
-    substr[i] = '\0';
-    return (substr);
+        str[i++] = s[start++];
+    str[i] = '\0';
+    return (str);
 }
