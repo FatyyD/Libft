@@ -6,7 +6,7 @@
 #    By: fadiallo <fadiallo@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/09 17:25:28 by fadiallo          #+#    #+#              #
-#    Updated: 2022/02/09 17:27:09 by fadiallo         ###   ########.fr        #
+#    Updated: 2022/02/09 17:48:32 by fadiallo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,6 +20,7 @@ CFLAGS = -Wall -Wextra -Werror
 #	ft_strnstr.c
 #	ft_memcmp.c
 SRC = ft_atoi.c \
+	 ft_itoa.c \
 	 ft_isalnum.c \
 	 ft_isalpha.c \
 	 ft_isascii.c \

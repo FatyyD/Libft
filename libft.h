@@ -6,7 +6,7 @@
 /*   By: fadiallo <fadiallo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/09 16:11:36 by fadiallo          #+#    #+#             */
-/*   Updated: 2022/02/09 17:31:06 by fadiallo         ###   ########.fr       */
+/*   Updated: 2022/02/09 18:02:09 by fadiallo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,5 +54,7 @@ t_list	*ft_lstnew(void *content);
 int		ft_lstsize(t_list *lst);
 t_list	*ft_lstlast(t_list *lst);
 int		ft_atoi(const char *s);
+char	*ft_itoa(int n);
+void	*ft_memset(void *s, int c, size_t n);
 
 #endif
