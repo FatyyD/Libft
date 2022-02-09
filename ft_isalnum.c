@@ -1,9 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: fadiallo <fadiallo@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/02/09 16:07:42 by fadiallo          #+#    #+#             */
+/*   Updated: 2022/02/09 16:07:43 by fadiallo         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include"libft.h"
-#include<unistd.h>
 
 int	ft_isalnum(int a)
-(
-	if(isalpha(c) || isdigit(c))
-	return(1);
-return(0);
-)
+{
+	if (ft_isalpha(a) || ft_isdigit(a))
+		return (1);
+	return (0);
+}

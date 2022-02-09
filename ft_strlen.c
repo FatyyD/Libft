@@ -1,14 +1,26 @@
-#include"libft.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: fadiallo <fadiallo@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/02/09 15:32:22 by fadiallo          #+#    #+#             */
+/*   Updated: 2022/02/09 17:25:56 by fadiallo         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-size_t  ft_strlen(const char *str)
+#include "libft.h"
+
+size_t	ft_strlen(const char *str)
 {
-      int i;
-	i = 0;
+	int	i;
 
-	while(*str)
-	{ 
+	i = 0;
+	while (*str)
+	{
 		str++;
-               i++;
-        }
-return(i);
+		i++;
+	}
+	return (i);
 }
