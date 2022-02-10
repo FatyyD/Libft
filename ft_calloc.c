@@ -6,16 +6,16 @@
 /*   By: fadiallo <fadiallo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/09 16:07:53 by fadiallo          #+#    #+#             */
-/*   Updated: 2022/02/09 17:33:26 by fadiallo         ###   ########.fr       */
+/*   Updated: 2022/02/09 18:48:09 by fadiallo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
+#include "libft.h"
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	char	*str;
-	size_t		i;
+	size_t	i;
 
 	i = 0;
 	str = malloc(nmemb * size);

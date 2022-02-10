@@ -6,7 +6,7 @@
 /*   By: fadiallo <fadiallo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/09 15:46:54 by fadiallo          #+#    #+#             */
-/*   Updated: 2022/02/09 17:31:50 by fadiallo         ###   ########.fr       */
+/*   Updated: 2022/02/09 18:54:27 by fadiallo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strdup(char *src)
 		len++;
 	cpy = (char *) malloc(sizeof(char) * (len +1));
 	if (cpy == NULL)
-	return (NULL);
+		return (NULL);
 	len = 0;
 	while (src[len])
 	{
