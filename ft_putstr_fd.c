@@ -6,7 +6,7 @@
 /*   By: fadiallo <fadiallo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/09 16:37:06 by fadiallo          #+#    #+#             */
-/*   Updated: 2022/02/09 16:38:32 by fadiallo         ###   ########.fr       */
+/*   Updated: 2022/02/10 19:57:01 by fadiallo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
+	if (!s)
+		return ;
 	while (*s)
 		write(fd, s++, 1);
 }

@@ -6,7 +6,7 @@
 #    By: fadiallo <fadiallo@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/09 17:25:28 by fadiallo          #+#    #+#              #
-#    Updated: 2022/02/10 17:36:23 by fadiallo         ###   ########.fr        #
+#    Updated: 2022/02/10 18:13:30 by fadiallo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ SRC = ft_atoi.c \
 	 ft_isprint.c \
 	 ft_memset.c \
 	 ft_lstadd_back.c\
-	 ft_lstadd_front \
+	 ft_lstadd_front.c \
 	 ft_lstnew.c \
 	 ft_lstsize.c \
 	 ft_lstlast.c \
@@ -46,6 +46,7 @@ SRC = ft_atoi.c \
 	 ft_strrchr.c\
 	 ft_strnstr.c\
 	 ft_strmapi.c \
+	 ft_striteri.c \
 	 ft_strncmp.c \
 	 ft_strtrim.c \
 	 ft_substr.c \

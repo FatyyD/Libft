@@ -6,7 +6,7 @@
 /*   By: fadiallo <fadiallo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/09 16:02:52 by fadiallo          #+#    #+#             */
-/*   Updated: 2022/02/09 17:28:21 by fadiallo         ###   ########.fr       */
+/*   Updated: 2022/02/10 20:00:39 by fadiallo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	d = (char *) dest;
 	s = (const char *) src;
 	i = 0;
+	if (!d && !s)
+		return (0);
 	if (d > s)
 	{
 		while (i < n)
@@ -30,12 +32,6 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		}
 	}
 	else
-	{
-		while (i < n)
-		{
-			d[i] = s[i];
-			i++;
-		}
-	}
+		ft_memcpy(d, s, n);
 	return (dest);
 }

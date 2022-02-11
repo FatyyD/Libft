@@ -6,7 +6,7 @@
 /*   By: fadiallo <fadiallo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/09 15:58:34 by fadiallo          #+#    #+#             */
-/*   Updated: 2022/02/09 17:53:46 by fadiallo         ###   ########.fr       */
+/*   Updated: 2022/02/10 19:56:47 by fadiallo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
+	if (!s)
+		return ;
 	while (*s)
 	{
 		write(fd, s++, 1);

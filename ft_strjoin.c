@@ -6,7 +6,7 @@
 /*   By: fadiallo <fadiallo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/09 15:43:07 by fadiallo          #+#    #+#             */
-/*   Updated: 2022/02/09 19:07:52 by fadiallo         ###   ########.fr       */
+/*   Updated: 2022/02/10 18:46:38 by fadiallo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	unsigned int		i;
-	unsigned int		j;
+	size_t	i;
+	size_t	j;
 	char	*str;
 
-	if (s1 != '\0' || s2 != '\0')
+	if (!s1 || !s2)
 		return (NULL);
 	i = 0;
 	j = 0;

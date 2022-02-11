@@ -6,7 +6,7 @@
 /*   By: fadiallo <fadiallo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/09 16:03:12 by fadiallo          #+#    #+#             */
-/*   Updated: 2022/02/09 16:03:49 by fadiallo         ###   ########.fr       */
+/*   Updated: 2022/02/10 19:54:49 by fadiallo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	d = (char *)dest;
 	s = (char *)src;
 	i = 0;
+	if (!d && !s)
+		return (0);
 	while (i < n)
 	{
 		d[i] = s[i];
